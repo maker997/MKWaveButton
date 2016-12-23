@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A3853711E0CB165005CD242 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3853701E0CB165005CD242 /* main.m */; };
+		1A3853741E0CB165005CD242 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3853731E0CB165005CD242 /* AppDelegate.m */; };
+		1A3853771E0CB165005CD242 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3853761E0CB165005CD242 /* ViewController.m */; };
+		1A38537A1E0CB165005CD242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3853781E0CB165005CD242 /* Main.storyboard */; };
+		1A38537C1E0CB165005CD242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A38537B1E0CB165005CD242 /* Assets.xcassets */; };
+		1A38537F1E0CB165005CD242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A38537D1E0CB165005CD242 /* LaunchScreen.storyboard */; };
+		1A3853B71E0D07E1005CD242 /* UIButton+Wave.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3853B61E0D07E1005CD242 /* UIButton+Wave.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A38536C1E0CB165005CD242 /* 水波纹点击效果.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "水波纹点击效果.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A3853701E0CB165005CD242 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A3853721E0CB165005CD242 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A3853731E0CB165005CD242 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A3853751E0CB165005CD242 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1A3853761E0CB165005CD242 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1A3853791E0CB165005CD242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A38537B1E0CB165005CD242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A38537E1E0CB165005CD242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A3853801E0CB165005CD242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A3853B51E0D07E1005CD242 /* UIButton+Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Wave.h"; sourceTree = "<group>"; };
+		1A3853B61E0D07E1005CD242 /* UIButton+Wave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Wave.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A3853691E0CB165005CD242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A3853631E0CB165005CD242 = {
+			isa = PBXGroup;
+			children = (
+				1A38536E1E0CB165005CD242 /* 水波纹点击效果 */,
+				1A38536D1E0CB165005CD242 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A38536D1E0CB165005CD242 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A38536C1E0CB165005CD242 /* 水波纹点击效果.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A38536E1E0CB165005CD242 /* 水波纹点击效果 */ = {
+			isa = PBXGroup;
+			children = (
+				1A3853721E0CB165005CD242 /* AppDelegate.h */,
+				1A3853731E0CB165005CD242 /* AppDelegate.m */,
+				1A3853751E0CB165005CD242 /* ViewController.h */,
+				1A3853761E0CB165005CD242 /* ViewController.m */,
+				1A3853781E0CB165005CD242 /* Main.storyboard */,
+				1A38537B1E0CB165005CD242 /* Assets.xcassets */,
+				1A3853B51E0D07E1005CD242 /* UIButton+Wave.h */,
+				1A3853B61E0D07E1005CD242 /* UIButton+Wave.m */,
+				1A38537D1E0CB165005CD242 /* LaunchScreen.storyboard */,
+				1A3853801E0CB165005CD242 /* Info.plist */,
+				1A38536F1E0CB165005CD242 /* Supporting Files */,
+			);
+			path = "水波纹点击效果";
+			sourceTree = "<group>";
+		};
+		1A38536F1E0CB165005CD242 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A3853701E0CB165005CD242 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A38536B1E0CB165005CD242 /* 水波纹点击效果 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A3853831E0CB165005CD242 /* Build configuration list for PBXNativeTarget "水波纹点击效果" */;
+			buildPhases = (
+				1A3853681E0CB165005CD242 /* Sources */,
+				1A3853691E0CB165005CD242 /* Frameworks */,
+				1A38536A1E0CB165005CD242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "水波纹点击效果";
+			productName = "水波纹点击效果";
+			productReference = 1A38536C1E0CB165005CD242 /* 水波纹点击效果.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A3853641E0CB165005CD242 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "刘甲奇";
+				TargetAttributes = {
+					1A38536B1E0CB165005CD242 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1A3853671E0CB165005CD242 /* Build configuration list for PBXProject "水波纹点击效果" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A3853631E0CB165005CD242;
+			productRefGroup = 1A38536D1E0CB165005CD242 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A38536B1E0CB165005CD242 /* 水波纹点击效果 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A38536A1E0CB165005CD242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A38537F1E0CB165005CD242 /* LaunchScreen.storyboard in Resources */,
+				1A38537C1E0CB165005CD242 /* Assets.xcassets in Resources */,
+				1A38537A1E0CB165005CD242 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A3853681E0CB165005CD242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3853771E0CB165005CD242 /* ViewController.m in Sources */,
+				1A3853741E0CB165005CD242 /* AppDelegate.m in Sources */,
+				1A3853B71E0D07E1005CD242 /* UIButton+Wave.m in Sources */,
+				1A3853711E0CB165005CD242 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A3853781E0CB165005CD242 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A3853791E0CB165005CD242 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A38537D1E0CB165005CD242 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A38537E1E0CB165005CD242 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A3853811E0CB165005CD242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A3853821E0CB165005CD242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A3853841E0CB165005CD242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "水波纹点击效果/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "maker997.com.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1A3853851E0CB165005CD242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "水波纹点击效果/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "maker997.com.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A3853671E0CB165005CD242 /* Build configuration list for PBXProject "水波纹点击效果" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A3853811E0CB165005CD242 /* Debug */,
+				1A3853821E0CB165005CD242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A3853831E0CB165005CD242 /* Build configuration list for PBXNativeTarget "水波纹点击效果" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A3853841E0CB165005CD242 /* Debug */,
+				1A3853851E0CB165005CD242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A3853641E0CB165005CD242 /* Project object */;
+}
