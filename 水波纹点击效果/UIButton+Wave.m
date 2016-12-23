@@ -24,6 +24,7 @@ static const char *showWave = "showWave";
 {
     self.waveView.hidden = isShowWave ? NO : YES;
     objc_setAssociatedObject(self, showWave, @(isShowWave), OBJC_ASSOCIATION_ASSIGN);
+    
 }
 - (BOOL)isShowWave
 {
@@ -55,6 +56,7 @@ void SwizzleMethod(Class c,SEL orignSEL, SEL replaceSEL)
     
     if (class_addMethod(c, orignSEL, method_getImplementation(replaceMethod), method_getTypeEncoding(replaceMethod)))
     {
+        
         class_replaceMethod(c, replaceSEL, method_getImplementation(orignMethod), method_getTypeEncoding(orignMethod));
     }else
     {
@@ -71,7 +73,6 @@ void SwizzleMethod(Class c,SEL orignSEL, SEL replaceSEL)
     
     self.waveView.alpha=0;
     self.clipsToBounds = YES;
-    
     return [self mk_initWithFrame:frame];
 }
 - (void)mk_setFrame:(CGRect)frame
@@ -82,7 +83,6 @@ void SwizzleMethod(Class c,SEL orignSEL, SEL replaceSEL)
     self.waveView.layer.cornerRadius = max;
     self.waveView.layer.masksToBounds=true;
     self.clipsToBounds = YES;
-    
 }
 
 - (BOOL)mk_beginTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event

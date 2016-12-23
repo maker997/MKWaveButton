@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 #import "UIButton+Wave.h"
-
 @interface ViewController ()
 
 /* 按钮 */
-@property(nonatomic,strong) UIView *RippleView;
+@property (weak, nonatomic) IBOutlet UIButton *button;
+
 
 @end
 
@@ -25,19 +25,17 @@
     UIButton *button = [[UIButton alloc] init];
     button.frame = CGRectMake(100, 100, 250, 60);
     [self.view addSubview:button];
-    button.isShowWave = YES;
-    
-    
     [button setTitle:@"点我" forState:0];
     [button setTitleColor:[UIColor blueColor] forState:0];
     [button setBackgroundColor:[UIColor lightGrayColor]];
-    [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    //水波纹效果
+    button.isShowWave = YES;
+    
 
 }
-- (void)btnClick:(UIButton *)sender
-{
-    
-}
+
+
 
 
 
