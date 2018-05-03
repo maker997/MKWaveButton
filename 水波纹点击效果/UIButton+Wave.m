@@ -17,30 +17,9 @@
 
 @implementation UIButton (Wave)
 
-#pragma mark =================== setter,getter ===================
 static const char *waveViewId = "waveView";
 static const char *showWave = "showWave";
-- (void)setIsShowWave:(BOOL)isShowWave
-{
-    self.waveView.hidden = isShowWave ? NO : YES;
-    objc_setAssociatedObject(self, showWave, @(isShowWave), OBJC_ASSOCIATION_ASSIGN);
-    
-}
-- (BOOL)isShowWave
-{
-    return objc_getAssociatedObject(self, showWave);
-}
-- (UIView *)waveView
-{
-    return objc_getAssociatedObject(self, waveViewId);
-}
-- (void)setWaveView:(UIView *)waveView
-{
 
-    objc_setAssociatedObject(self, waveViewId, waveView, OBJC_ASSOCIATION_RETAIN);
-    
-}
-#pragma mark =================== 运行时替换方法 ===================
 + (void)load
 {
     SwizzleMethod(self, @selector(initWithFrame:), @selector(mk_initWithFrame:));
@@ -65,7 +44,7 @@ void SwizzleMethod(Class c,SEL orignSEL, SEL replaceSEL)
     
 }
 
-#pragma mark =================== 自己的方法 ===================
+#pragma mark- privateMethod
 - (instancetype)mk_initWithFrame:(CGRect)frame
 {
     self.waveView = [[UIView alloc] init];
@@ -84,7 +63,7 @@ void SwizzleMethod(Class c,SEL orignSEL, SEL replaceSEL)
     self.waveView.layer.masksToBounds=true;
     self.clipsToBounds = YES;
 }
-
+#pragma mark - setter,getter
 - (BOOL)mk_beginTrackingWithTouch:(UITouch *)touch withEvent:(nullable UIEvent *)event
 {
     CGPoint location = [touch locationInView:self];
@@ -106,6 +85,27 @@ void SwizzleMethod(Class c,SEL orignSEL, SEL replaceSEL)
     }];
     
     return [super beginTrackingWithTouch:touch withEvent:event];
+}
+
+- (void)setIsShowWave:(BOOL)isShowWave
+{
+    self.waveView.hidden = isShowWave ? NO : YES;
+    objc_setAssociatedObject(self, showWave, @(isShowWave), OBJC_ASSOCIATION_ASSIGN);
+    
+}
+- (BOOL)isShowWave
+{
+    return objc_getAssociatedObject(self, showWave);
+}
+- (UIView *)waveView
+{
+    return objc_getAssociatedObject(self, waveViewId);
+}
+- (void)setWaveView:(UIView *)waveView
+{
+
+    objc_setAssociatedObject(self, waveViewId, waveView, OBJC_ASSOCIATION_RETAIN);
+    
 }
 @end
 
